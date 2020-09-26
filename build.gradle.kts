@@ -27,6 +27,7 @@ dependencyManagement {
         dependency("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-test:3.2.1")
         dependency("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:3.2.1")
         dependency("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:3.2.1")
+        dependency("org.camunda.connect:camunda-connect-core:1.5.0")
     }
 }
 
@@ -41,6 +42,11 @@ dependencies {
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:3.2.1")
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:3.2.1")
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:3.2.1")
+    implementation("org.camunda.connect:camunda-connect-core:1.5.0")
+    implementation("org.camunda.connect:camunda-connect-http-client")
+    implementation("org.camunda.bpm:camunda-engine-plugin-connect")
+    implementation("org.camunda.bpm:camunda-engine")
+    implementation("org.camunda.spin:camunda-spin-dataformat-json-jackson")
     implementation("org.camunda.bpm:camunda-engine-plugin-spin")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
